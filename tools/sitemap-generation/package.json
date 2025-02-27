@@ -5,11 +5,11 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "generate": "node index.js"
+    "generate": "node generate-sitemap.js",
+    "fetch-external": "node fetch-external-hreflangs.js"
   },
   "dependencies": {
     "axios": "^1.8.1",
-    "fast-xml-parser": "^5.0.7",
-    "xml-js": "^1.6.11"
+    "fast-xml-parser": "^5.0.7"
   }
 }
