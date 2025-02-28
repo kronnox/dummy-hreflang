@@ -25,6 +25,7 @@ const fetchExternalSitemaps = async () => {
       xml = parser.parse(response.data);
     } catch (error) {
       console.error(`  Error fetching or parsing the sitemap (${site.sitemap}):`, error.message);
+      return;
     }
 
     sitemaps.push({
